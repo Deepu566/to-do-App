@@ -9,23 +9,13 @@ const Sidebar = () => {
     const [toDoInput, setToDoInput] = useState(false)
     const [newTask, setNewTask] = useState();
 
-    const handleChange = (e) => {
-        const value = e.target.value
-        // let array = JSON.parse(localStorage.getItem('localTask'))
-        if (value) {
-            setVal([])
-        }
-
-    }
 
 
     return (
-        <div className='w-1/4  border-r-2 border-black'>
-            <div>
-                <input onChange={handleChange} type="text" placeholder='search todo' />
-            </div>
-            <div>
-                <button className=' bg-black text-white rounded-md  font-bold capitalize px-4 py-2 text-lg'
+        <div className='max-sm:w-full max-sm:border-none  border-r-2  border-black'>
+            <div className=''>
+                <button className='bg-[#27374D] hover:bg-[#1f3047] text-[#9DB2BF] rounded-md  font-bold capitalize px-4 py-2 text-lg
+                max-sm:w-full'
                     onClick={() => {
                         setToDoInput(!toDoInput)
                         setRefresh(!refresh)

@@ -12,8 +12,9 @@ function App() {
 
   return (
 
-    <div className="App bg-blue-100 h-screen flex justify-center items-center">
-      <div className='flex h-5/6 w-5/6 bg-teal-300 rounded-xl px-5 py-8'>
+    <div className="App bg-[#27374D] h-screen  flex justify-center items-center">
+      <div className='flex gap-5 h-5/6 w-5/6 bg-[#526D82]  rounded-xl px-5 py-8
+      max-sm:h-screen max-sm:w-screen max-sm:rounded-none max-sm:flex-col'>
         <userContext.Provider value={{ setRefresh, refresh, val, setVal }}>
           <Sidebar />
           <Content />
